@@ -1,4 +1,5 @@
 const email = document.getElementById('email').value.trim()
+const emailForm = document.getElementsByClassName("email_form")
 document
   .getElementsByClassName('email_form')
   .addEventsListener('submit', event => {

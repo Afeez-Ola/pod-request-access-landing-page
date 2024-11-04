@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <section class="main">
@@ -23,7 +24,7 @@
               Publish your podcasts <span>everywhere.</span>
             </h2>
             <p class="text_preset_2">
-              Upload your audio to Pod with a single click. We’ll then
+              Upload your audio to Pod with a single click. We'll then
               distribute your podcast to Spotify, Apple Podcasts, Google
               Podcasts, Pocket Casts and more!
             </p>
@@ -42,16 +43,22 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Email address" required
+              placeholder="Email address"
+              required
             />
-            <button class="text_preset_3  form_button" href="#">Request Access</button>
-                    <p id="error-message" style="color: red; display: none;">Invalid email address.</p>
-
+            <button class="text_preset_3 form_button" href="#">
+              Request Access
+            </button>
+            <p id="error-message" style="color: red; display: none">
+              Invalid email address.
+            </p>
+            <p id="success-message" style="color: green; display: none">
+              Form submitted successfully!
+            </p>
           </form>
         </div>
       </div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>

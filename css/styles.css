@@ -132,3 +132,10 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+#email {
+  padding: 1rem 2rem;
+  border-radius: 1.8rem;
+  background-color: var(--blue-900);
+  border: 2px solid var(--blue-900);
+}

@@ -144,6 +144,7 @@ a {
   border: 2px solid var(--blue-900);
   padding: 0.5rem 2rem;
   border-radius: 1.8rem;
+  color: var(--white);
 }
 
 .form_button {
@@ -157,17 +158,38 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 30rem) {
+.error{
+  border-color: var(--red);
+  outline: var(--red);
+  color: var(--red);
+}
+.success{
+  border-color: var(--green);
+  outline: var(--green);
+  color: var(--green);
+}
+
+@media screen and (min-width: 40rem) {
   body {
-    background-image: url('../assets/tablet/image-host.jpg');
+    background-position: bottom left, top right;
+    background-image: url('../assets/desktop/bg-pattern-dots.svg'),
+      url('../assets/tablet/image-host.jpg');
     background-blend-mode: normal;
     background-position: 100% 1%;
-    background-size: 50%;
+    background-size: initial;
+    background-blend-mode: initial;
   }
 
   .main {
     width: 70%;
     margin: 3rem;
+  }
+  .container {
+    background-color: var(--blue-950);
+  }
+  .logo {
+    width: 60%;
+    margin: 4rem 0;
   }
 
   .logo img {
@@ -182,10 +204,12 @@ a {
 
   .bottom_note {
     text-align: left;
+    max-width: 32rem;
   }
 
   .sponsors {
     order: 3;
+    margin: 0;
   }
   .sponsors img {
     width: 30%;
@@ -197,6 +221,8 @@ a {
     padding: 0.3rem;
     flex-direction: row;
     gap: 0;
+    max-width: 26rem;
+
   }
 
   #email {
@@ -214,5 +240,11 @@ a {
     position: absolute;
     left: 40rem;
     top: 45rem;
+  }
+}
+
+@media screen and (min-width:60rem){
+  body{
+    background-image: url("../assets/desktop/image-host.jpg");
   }
 }

@@ -37,18 +37,17 @@
             />
             <img src="assets/desktop/pocket-casts.svg" alt="pocket-casts" />
           </div>
-          <div class="email_form">
+          <form class="email_form">
             <input
               type="email"
               name="email"
               id="email"
-              placeholder="Email address"
+              placeholder="Email address" required
             />
-            <a class="text_preset_3  form_button" href="#">Request Access</a>
-          </div>
-        </div>
-        <div class="dotted_image">
-          <img class="hidden" src="assets/desktop/bg-pattern-dots.svg" alt="">
+            <button class="text_preset_3  form_button" href="#">Request Access</button>
+                    <p id="error-message" style="color: red; display: none;">Invalid email address.</p>
+
+          </form>
         </div>
       </div>
     </section>

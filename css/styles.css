@@ -79,9 +79,18 @@ button {
   margin-top: 0;
     margin: 0 auto 4rem auto;
     width: 100%;
+    display: flex;
 }
 
 .logo img{
   width: 80%;
   margin: auto;
+}
+
+.bottom_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
